@@ -8,6 +8,8 @@ public class UpgradeItemView : MonoBehaviour
     public Image iconImage;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI costText;
+    public TextMeshProUGUI ownedText;
+    private int owned = 0;
     public GameObject lockOverlay; // ton Image semi-transparente + icône cadenas
     public Image lockIcon; // le petit cadenas dans l’icône
     public Button buyButton;
@@ -30,6 +32,13 @@ public class UpgradeItemView : MonoBehaviour
     {
         nameText.text = upgrade.name;
         costText.text = upgrade.cost.ToString("F0");
+    }
+
+    public void IncreaseOwned()
+    {
+        this.owned++;
+
+        this.ownedText.text = "        x" + this.owned.ToString();
     }
 
     public void SetUnlocked(Upgrades upgrade)

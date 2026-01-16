@@ -81,6 +81,7 @@ public class UpgradeMenu : MonoBehaviour
             {
                 gameManager.purchaseUpgrade(upgrade);
                 view.SetData(upgrade);
+                view.IncreaseOwned();
                 RefreshLayout();
             }
         }
@@ -91,6 +92,7 @@ public class UpgradeMenu : MonoBehaviour
         if (_viewsById.TryGetValue(upgrade.id, out var view))
         {
             view.SetData(upgrade);
+            view.IncreaseOwned();
             RefreshLayout();
         }
     }
