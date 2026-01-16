@@ -1,0 +1,3 @@
+repository "Coffee Clicker/Coffee Clicker@9071445898093@cloud"
+  path "/"
+    smartbranch "/main"

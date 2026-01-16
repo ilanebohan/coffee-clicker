@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "Input_Actions_System",
+    "maps": [
+        {
+            "name": "Pause",
+            "id": "5ec77ee0-d773-4f8f-bb44-8c2dbb38d9ed",
+            "actions": [
+                {
+                    "name": "SetPause ON/OFF",
+                    "type": "Button",
+                    "id": "385a5e67-aa9d-4f2f-8ef1-bc385ebee515",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c5350a48-68ec-422a-96f5-4603e1692b37",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetPause ON/OFF",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
